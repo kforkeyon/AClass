@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - AClass</title>
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Luma</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots"
+          content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+          rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css"
+          href="Public/vendor/spinkit.css"
+          rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css"
+          href="Public/vendor/perfect-scrollbar.css"
+          rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css"
+          href="Public/css/material-icons.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css"
+          href="Public/css/fontawesome.css"
+          rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css"
+          href="Public/css/preloader.css"
+          rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css"
+          href="Public/css/app.css"
+          rel="stylesheet">
+
+</head>
+<body class="layout-app ">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">AClass</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - AClass - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
