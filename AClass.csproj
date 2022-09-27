@@ -492,9 +492,13 @@
     <None Remove="Public\vendor\jqvmap\maps\continents\jquery.vmap.south-america.js" />
     <None Remove="Public\vendor\jqvmap\maps\continents\jquery.vmap.australia.js" />
     <None Remove="Public\vendor\jqvmap\maps\continents\jquery.vmap.europe.js" />
+    <None Remove="GitHub" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Public\data\vector-maps\data\france-elections.json" />
     <Content Remove="Public\data\vector-maps\data\us-unemployment.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GitHub" Version="1.34.0" />
   </ItemGroup>
 </Project>
